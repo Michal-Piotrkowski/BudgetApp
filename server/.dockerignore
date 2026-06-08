@@ -1,0 +1,35 @@
+# Maven build artifacts
+target/
+
+# Test files
+src/test/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Environment files
+.env
+.env.*
+
+# Docker files
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Logs
+*.log
+
+# Database initialization scripts (mounted as volume)
+initdb/
+
+# other
+.idea
+docs
+postman
+docker
+
+# Omit maven directories that might conflict if empty, though they are needed for mvnw
+# !.mvn
+# !mvnw
