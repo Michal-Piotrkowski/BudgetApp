@@ -26,8 +26,6 @@ services:
     restart: unless-stopped
     env_file:
       - ./server/.env
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/${MYSQL_DATABASE:-piotrkowski_michal_k03_spring}?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
     ports:
       - "8080:8080"
     depends_on:
